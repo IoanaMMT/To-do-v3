@@ -53,3 +53,18 @@ html {
   position: sticky;
   bottom: 0;
 }
+
+.completed_button {
+    margin-bottom: -1.5em;
+    margin-top: 1em;
+}
+
+.completed_list {
+    transition: opacity 0.5s ease; /* Smooth opacity transition */
+    opacity: 1;
+}
+
+.completed_list.hide {
+    opacity: 0;
+    pointer-events: none; /* Hide completed items from interaction */
+}

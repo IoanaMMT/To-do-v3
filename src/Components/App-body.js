@@ -6,11 +6,13 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { useState } from 'react';
+import Button from '@mui/material/Button';
 
 export default function TaskFields() {
 
     const [newItems, setNewItems] = useState([]);
     const [completedItems, setCompletedItems] = useState([]);
+    const [showCompletedItems, setShowCompletedItems] = useState([]);
 
     const addItem = (newItemText) => {
         setNewItems([...newItems, {text: newItemText , completed : false}])
@@ -26,8 +28,11 @@ export default function TaskFields() {
             setCompletedItems([...completedItems, newItemList[index]]);
             newItemList.splice(index, 1);
         }
-
 };
+
+    const toggleCompletedItems = () => {
+        setShowCompletedItems(!showCompletedItems);
+    };
 
 
   return (
@@ -52,9 +57,18 @@ export default function TaskFields() {
                     </RadioGroup>
                 </div>
             </FormControl>
-            <div className='completed_list'>
-                <h1>Completed Items</h1>
-                        <ul className='completed_item_list'>
+            <div className= {`completed_list ${showCompletedItems ? 'show' : 'hide'}`}>
+                        <Box sx={{ '& button': { m: 1 } }}>
+                            <div className='completed_button'>
+                                <Button 
+                                variant="contained" 
+                                size="medium"
+                                onClick={toggleCompletedItems}>
+                                {showCompletedItems? 'Completed >' : 'Completed V'}
+                                </Button>
+                            </div>
+                        </Box>
+                        <ul className= 'completed_item_list'>
                             {[...completedItems].reverse().map((item,index) =>
                             (<li 
                                 key = {index}
