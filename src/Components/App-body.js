@@ -51,30 +51,33 @@ export default function TaskFields() {
                         key = {index} 
                         value= {index.toString()} 
                         control={<Radio onClick= {() => handleClick(newItems.length - 1 - index)} checked={item.completed}/>} 
-                        label={item.text} />
+                        label={item.text} 
+                        />
                 
                     ))}
                     </RadioGroup>
                 </div>
             </FormControl>
-            <div className= {`completed_list ${showCompletedItems ? 'show' : 'hide'}`}>
+            <div className= 'completed_list'>
                         <Box sx={{ '& button': { m: 1 } }}>
                             <div className='completed_button'>
                                 <Button 
                                 variant="contained" 
                                 size="medium"
                                 onClick={toggleCompletedItems}>
-                                {showCompletedItems? 'Completed >' : 'Completed V'}
+                                {showCompletedItems? 'Completed V' : 'Completed >'}
                                 </Button>
                             </div>
                         </Box>
-                        <ul className= 'completed_item_list'>
+                        <div className='container_completed_item_list'>
+                        <ul className=  {`completed_item_list ${showCompletedItems ? 'show' : 'hide'}`}>
                             {[...completedItems].reverse().map((item,index) =>
                             (<li 
                                 key = {index}
                                 className='completed_item'
                                 >{item.text}</li>))}
                         </ul>
+                        </div>
             </div>
 
         {/* Entry field */}

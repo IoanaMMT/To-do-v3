@@ -6,19 +6,19 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    outline: none;   
+    outline: none;
 }
 
 .new_list {
     overflow-y: scroll;
-    max-height: 200px;
+    max-height: 150px;
     overflow-y: auto;
 
 }
 
 .new_item {
     background-color: aquamarine;
-    padding: 0.5em;
+    padding: 0.2em;
     margin: 0.3em;
     border-radius: 2%;
     max-height: 30%;
@@ -32,19 +32,23 @@ html {
     flex-direction: column; */
     overflow-y: scroll;
     margin-left: -3em;
-    max-height: 200px;
+    max-height: 150px;
     overflow-y: auto;
 }
 
 .completed_item {
     background-color: aquamarine;
-    padding: 1em;
+    padding: 0.7em;
     margin: 0.6em;
     border-radius: 2%;
     max-height: 30%;
     text-decoration:line-through;
     list-style-type: none;
     width: 100%;
+}
+
+.container_completed_item_list {
+    padding-top: 1em;
 }
 
 .entry_field {
@@ -59,12 +63,17 @@ html {
     margin-top: 1em;
 }
 
-.completed_list {
-    transition: opacity 0.5s ease; /* Smooth opacity transition */
+.completed_item_list {
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
     opacity: 1;
 }
 
-.completed_list.hide {
+.completed_item_list.hide {
     opacity: 0;
     pointer-events: none; /* Hide completed items from interaction */
 }
+
+li:hover {
+    background-color: rgb(214, 214, 250);
+}
+

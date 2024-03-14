@@ -14,8 +14,11 @@ const currentDate = `${day < 10 ? '0' + day : day}-${month < 10 ? '0' + month : 
 // now.toLocaleString();
     
     return (
-        <><h2>My Day</h2>
-        <h3>{currentDate}</h3>
+        <>
+            <div>
+                <h2>My Day</h2>
+                 <h3>{currentDate}</h3>
+            </div>
         </>
 
     )
