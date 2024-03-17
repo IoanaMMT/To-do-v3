@@ -15,9 +15,9 @@ const currentDate = `${day < 10 ? '0' + day : day}-${month < 10 ? '0' + month : 
     
     return (
         <>
-            <div>
-                <h2>My Day</h2>
-                 <h3>{currentDate}</h3>
+            <div className='top_row'>
+                <h2 id='my_day'>My Day</h2>
+                 <h3 id='today_date'>{currentDate}</h3>
             </div>
         </>
 
