@@ -7,6 +7,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { useState } from 'react';
 import Button from '@mui/material/Button';
+import { alpha } from '@mui/material/styles';
 
 export default function TaskFields() {
 
@@ -91,6 +92,9 @@ export default function TaskFields() {
                 autoComplete="off"
                 >
                 <TextField 
+                sx={{
+                    backgroundColor: (theme) => alpha(theme.palette.common.white, 0.7),
+                }}
                     id="outlined-basic" 
                     label= "+ Add Task" 
                     variant="outlined" 
