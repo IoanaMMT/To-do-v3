@@ -8,6 +8,9 @@ import FormControl from '@mui/material/FormControl';
 import { useState } from 'react';
 import Button from '@mui/material/Button';
 import { alpha } from '@mui/material/styles';
+import Stack from '@mui/material/Stack';
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 export default function TaskFields() {
 
@@ -38,7 +41,7 @@ export default function TaskFields() {
 
   return (
     <>
-    {/* To do items Incompleted */}
+{/* **********  Incompleted List  *********** */}
             <FormControl >
                 <div className='new_list'>
                 <RadioGroup
@@ -59,6 +62,8 @@ export default function TaskFields() {
                     </RadioGroup>
                 </div>
             </FormControl>
+
+ {/* ***********  Completed items list  *********** */}
             <div className= 'completed_list'>
                         <Box sx={{ '& button': { m: 1 } }}>
                             <div className='completed_button'>
@@ -80,8 +85,16 @@ export default function TaskFields() {
                         </ul>
                         </div>
             </div>
+ {/* ********* Remove button to clear the list  ******* */}
+            <div className='remove_button'>
+                <Stack direction="row" spacing={2}>
+                    <Button variant="outlined" size="small" startIcon={<DeleteIcon />}>
+                        Remove all
+                    </Button>
+                </Stack>
+            </div>
 
-        {/* Entry field */}
+ {/* *******  Entry Field  ********* */}
             <div className='entry_field'>
                 <Box
                 component="form"

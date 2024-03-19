@@ -75,6 +75,10 @@ html {
     margin-top: 1em;
 }
 
+.remove_button {
+    margin-left: 0.5em;
+}
+
 .completed_item_list {
     transition: opacity 0.3s ease; /* Smooth opacity transition */
     opacity: 1;
