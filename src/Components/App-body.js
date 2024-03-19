@@ -38,6 +38,10 @@ export default function TaskFields() {
         setShowCompletedItems(!showCompletedItems);
     };
 
+    const removeAll = () => {
+        setCompletedItems([])
+    }
+
 
   return (
     <>
@@ -75,20 +79,24 @@ export default function TaskFields() {
                                 </Button>
                             </div>
                         </Box>
-                        <div className='container_completed_item_list'>
-                        <ul className=  {`completed_item_list ${showCompletedItems ? 'show' : 'hide'}`}>
-                            {[...completedItems].reverse().map((item,index) =>
-                            (<li 
-                                key = {index}
-                                className='completed_item'
-                                >{item.text}</li>))}
-                        </ul>
-                        </div>
+                <div className='container_completed_item_list'>
+                    <ul className=  {`completed_item_list ${showCompletedItems ? 'show' : 'hide'}`}>
+                                {[...completedItems].reverse().map((item,index) =>
+                                (<li 
+                                    key = {index}
+                                    className='completed_item'
+                                    >{item.text}</li>))}
+                    </ul>
+                </div>
             </div>
  {/* ********* Remove button to clear the list  ******* */}
             <div className='remove_button'>
                 <Stack direction="row" spacing={2}>
-                    <Button variant="outlined" size="small" startIcon={<DeleteIcon />}>
+                    <Button 
+                    variant="outlined" 
+                    size="small" 
+                    startIcon={<DeleteIcon />}
+                    onClick= {removeAll}>
                         Remove all
                     </Button>
                 </Stack>
