@@ -10,6 +10,7 @@ import Button from '@mui/material/Button';
 import { alpha } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { useEffect } from 'react';
 
 
 export default function TaskFields() {
@@ -17,6 +18,7 @@ export default function TaskFields() {
     const [newItems, setNewItems] = useState([]);
     const [completedItems, setCompletedItems] = useState([]);
     const [showCompletedItems, setShowCompletedItems] = useState([]);
+    const [toBeRemoved, setToBeRemoved] = useState(true);
 
     const addItem = (newItemText) => {
         setNewItems([...newItems, {text: newItemText , completed : false}])
@@ -39,8 +41,16 @@ export default function TaskFields() {
     };
 
     const removeAll = () => {
-        setCompletedItems([])
+        setCompletedItems([]);
+        setToBeRemoved(false);
     }
+
+    // useEffect(() =>
+    // {
+    //     if(completedItems.length === 0) {
+    //         setToBeRemoved(false);
+    //     }
+    // }, [completedItems])
 
 
   return (
@@ -90,7 +100,7 @@ export default function TaskFields() {
                 </div>
             </div>
  {/* ********* Remove button to clear the list  ******* */}
-            <div className='remove_button'>
+            <div className={`remove_button ${toBeRemoved? 'show' : 'hide'}`}>
                 <Stack direction="row" spacing={2}>
                     <Button 
                     variant="outlined" 
