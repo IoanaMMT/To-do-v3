@@ -69,8 +69,11 @@ export default function TaskFields() {
                 </div>
             </FormControl>): 
             <div className='intro'>
-                <h2>Time is precious,</h2>
-                <h3>waste it wisely</h3>
+                <div className='intro_text'>
+                    <h2>Time is precious,</h2>
+                    <h3>waste it wisely</h3> <br/>
+                    <h5>Create your daily tasks</h5>
+                </div>
                 
             </div>
             }

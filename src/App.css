@@ -15,15 +15,28 @@ html {
 }
 
 .intro {
-    background-color:rgb(61, 62, 63) ;
+    background-image: url(C:/Users/Ebay-No-Password/Desktop/Coding/to-do-v3/src/Components/Images/wiseInTheDark.png);
+    background-size: cover;
+    background-color:rgb(118, 119, 121) ;
     opacity: 0.6;
     border-radius: 15px;
-    text-align: center;
+    text-align: left;
     color: white;
     line-height: 1em;
     padding: 2em;
     position: relative;
     top: 9em;
+    max-height: 7em;
+    min-height: 6em;
+}
+
+.intro_text {
+    position: relative;
+    bottom: 1.7em;
+}
+
+.intro_text h5 {
+    font-style: oblique;
 }
 
 
