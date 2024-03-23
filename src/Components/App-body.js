@@ -70,27 +70,29 @@ export default function TaskFields() {
             </FormControl>
 
  {/* ***********  Completed items list  *********** */}
-            <div className= 'completed_list'>
-                        <Box sx={{ '& button': { m: 1 } }}>
-                            <div className='completed_button'>
-                                <Button 
-                                variant="contained" 
-                                size="medium"
-                                onClick={toggleCompletedItems}>
-                                {showCompletedItems? 'Completed V' : 'Completed >'}
-                                </Button>
-                            </div>
-                        </Box>
-                <div className='container_completed_item_list'>
-                    <ul className=  {`completed_item_list ${showCompletedItems ? 'show' : 'hide'}`}>
-                                {[...completedItems].reverse().map((item,index) =>
-                                (<li 
-                                    key = {index}
-                                    className='completed_item'
-                                    >{item.text}</li>))}
-                    </ul>
-                </div>
-            </div>
+            {completedItems.length ? (
+                <div className= 'completed_list'>
+                <Box sx={{ '& button': { m: 1 } }}>
+                    <div className='completed_button'>
+                        <Button 
+                        variant="contained" 
+                        size="medium"
+                        onClick={toggleCompletedItems}>
+                        {showCompletedItems? 'Completed V' : 'Completed >'}
+                        </Button>
+                    </div>
+                </Box>
+        <div className='container_completed_item_list'>
+            <ul className=  {`completed_item_list ${showCompletedItems ? 'show' : 'hide'}`}>
+                        {[...completedItems].reverse().map((item,index) =>
+                        (<li 
+                            key = {index}
+                            className='completed_item'
+                            >{item.text}</li>))}
+            </ul>
+        </div>
+    </div>
+            ): ''}
  {/* ********* Remove button to clear the list  ******* */}
             {completedItems.length ?  
                 (<div className='remove_button'>
