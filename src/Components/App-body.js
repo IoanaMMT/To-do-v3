@@ -47,7 +47,7 @@ export default function TaskFields() {
   return (
     <>
 {/* **********  Incompleted List  *********** */}
-            <FormControl >
+            {newItems.length ? (<FormControl >
                 <div className='new_list'>
                 <RadioGroup
                     className='radio-button'
@@ -67,7 +67,13 @@ export default function TaskFields() {
                     ))}
                     </RadioGroup>
                 </div>
-            </FormControl>
+            </FormControl>): 
+            <div className='intro'>
+                <h2>Time is precious,</h2>
+                <h3>waste it wisely</h3>
+                
+            </div>
+            }
 
  {/* ***********  Completed items list  *********** */}
             {completedItems.length ? (
