@@ -11,9 +11,9 @@ html {
     min-height: 100%;
     outline: none;
     position: relative;
-    
 }
 
+/* if none of the lists are displayed a default image to be displayed */
 .intro {
     background-image: url(C:/Users/Ebay-No-Password/Desktop/Coding/to-do-v3/src/Components/Images/wiseInTheDark.png);
     background-size: cover;
@@ -65,6 +65,7 @@ html {
     border: 0.5px solid rgb(194, 193, 193);
     opacity: 0.8;
     box-shadow: 0 3px 6px 0 rgba(77, 75, 75, 0.2), 0 6px 20px 0 rgba(170, 167, 167, 0.19);
+    border-radius: 10px;
 }
 
 .radio-button {
@@ -87,6 +88,7 @@ html {
     border: 0.5px solid rgb(194, 193, 193);
     opacity: 0.8;
     box-shadow: 0 3px 6px 0 rgba(77, 75, 75, 0.2), 0 6px 20px 0 rgba(170, 167, 167, 0.19);
+    border-radius: 10px;
 }
 
 .container_completed_item_list {
@@ -124,6 +126,7 @@ html {
 li:hover {
     background-color: rgb(214, 214, 250);
 }
+
 
 .entry_field {
     /* position: absolute;
