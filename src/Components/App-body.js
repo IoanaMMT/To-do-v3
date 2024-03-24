@@ -46,9 +46,10 @@ export default function TaskFields() {
 
   return (
     <>
-<div className='all_lists'>
+{newItems.length? (
+    <div className='all_lists'>
     {/* **********  Incompleted List  *********** */}
-    {newItems.length ? (<FormControl >
+    <FormControl >
                 <div className='new_list'>
                 <RadioGroup
                     className='radio-button'
@@ -68,16 +69,7 @@ export default function TaskFields() {
                     ))}
                     </RadioGroup>
                 </div>
-            </FormControl>): 
-            <div className='intro'>
-                <div className='intro_text'>
-                    <h2>Time is precious,</h2>
-                    <h3>waste it wisely</h3> <br/>
-                    <h5>Create your daily tasks</h5>
-                </div>
-                
-            </div>
-            }
+            </FormControl>
 
  {/* ***********  Completed items list  *********** */}
             {completedItems.length ? (
@@ -119,6 +111,17 @@ export default function TaskFields() {
             }
 
 </div>
+): 
+<div className='intro'>
+                <div className='intro_text'>
+                    <h2>Time is precious,</h2>
+                    <h3>waste it wisely</h3> <br/>
+                    <h5>Create your daily tasks</h5>
+                </div>
+                
+            </div>
+}
+
  {/* *******  Entry Field  ********* */}
             <div className='entry_field'>
                 <Box
