@@ -49,11 +49,20 @@ html {
     padding-top: 5px;
 }
 
-.new_list {
-    overflow-y: scroll;
-    max-height: 160px;
+.all_lists {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    min-height: 400px;
     overflow-y: auto;
+}
 
+.new_list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: auto;
+    overflow-y: auto;
 }
 
 .new_item {

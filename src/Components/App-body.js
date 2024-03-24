@@ -46,8 +46,9 @@ export default function TaskFields() {
 
   return (
     <>
-{/* **********  Incompleted List  *********** */}
-            {newItems.length ? (<FormControl >
+<div className='all_lists'>
+    {/* **********  Incompleted List  *********** */}
+    {newItems.length ? (<FormControl >
                 <div className='new_list'>
                 <RadioGroup
                     className='radio-button'
@@ -117,6 +118,7 @@ export default function TaskFields() {
             </div>): ''
             }
 
+</div>
  {/* *******  Entry Field  ********* */}
             <div className='entry_field'>
                 <Box
