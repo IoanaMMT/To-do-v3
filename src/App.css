@@ -52,8 +52,9 @@ html {
 .all_lists {
     display: flex;
     flex-direction: column;
-    max-height: 400px;
-    min-height: 400px;
+    /* max-height: 400px;
+    min-height: 400px; */
+    max-height: 60vh;
     overflow-y: auto;
 }
 
@@ -144,3 +145,37 @@ li:hover {
   bottom: 0;
   height: 100px;
 }
+
+
+/* ******* MEDIA@ ********* */
+
+
+@media (min-width: 700px) {
+    html{
+        max-width: 700px;
+        margin: auto;
+        padding: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-height: 667px) {
+    .all_lists{
+        max-height: 57vh
+    
+    }
+}
+
+@media (min-height: 768px) {
+    .all_lists{
+        max-height: 70vh
+    
+    }
+} 
+
+@media (min-height: 1025px) {
+    .all_lists{
+        max-height: 80vh
+    
+    }
+} 
