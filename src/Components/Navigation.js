@@ -8,17 +8,27 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 export default function DenseAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ bgcolor: 'rgb(252, 240, 225)' }}>
-        <Toolbar variant="dense">
-          <IconButton edge="start" color="" aria-label="menu" sx={{ mr: 2 }}>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" color="inherit" component="div">
+    <Box sx={{ flexGrow: 1 }} >
+      <AppBar position="static" sx={{ bgcolor: 'rgb(252, 240, 225)' }} >
+        <Toolbar variant="dense" className='menu'>
+            <div className='hamburger'>
+            <IconButton edge="start" color="" aria-label="menu" sx={{ mr: 2 }}>
+              <MenuIcon />
+            </IconButton>
+            </div>
+            <div className='nav-bar'>
+              <ul className='nav-list'>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+              </ul>
+            </div>
+        </Toolbar>
+        <Typography variant="h6" color="inherit" component="div">
             {/* add text later on if needed */}
           </Typography>
-        </Toolbar>
       </AppBar>
+      
     </Box>
   );
 }

@@ -13,6 +13,24 @@ html {
     position: relative;
 }
 
+.menu {
+    display: flex;
+    justify-content:end;
+}
+
+.nav-list {
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content:space-between;
+    gap: 2em;
+
+}
+
+.hamburger {
+    display: none;
+} 
+
 /* if none of the lists are displayed a default image to be displayed */
 .intro {
     background-image: url(C:/Users/Ebay-No-Password/Desktop/Coding/to-do-v3/src/Components/Images/wiseInTheDark.png);
@@ -171,6 +189,7 @@ li:hover {
         max-height: 70vh
     
     }
+   
 } 
 
 @media (min-height: 1025px) {
@@ -179,3 +198,9 @@ li:hover {
     
     }
 } 
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
