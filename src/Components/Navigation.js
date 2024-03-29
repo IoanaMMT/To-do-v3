@@ -19,8 +19,8 @@ export default function DenseAppBar() {
             <div className='nav-bar'>
               <ul className='nav-list'>
                 <li>Home</li>
-                <li>Contact</li>
-                <li>About</li>
+                <li>Shopping</li>
+                <li>Travel List</li>
               </ul>
             </div>
         </Toolbar>
