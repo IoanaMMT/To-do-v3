@@ -46,7 +46,7 @@ export default function TaskFields() {
 
   return (
     <>
-{newItems.length? (
+{(newItems.length || completedItems.length) ? (
     <div className='all_lists'>
     {/* **********  Incompleted List  *********** */}
     <FormControl >
