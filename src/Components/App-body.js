@@ -10,8 +10,7 @@ import Button from '@mui/material/Button';
 import { alpha } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { useEffect } from 'react';
-
+import { MdOutlineDelete } from "react-icons/md";
 
 export default function TaskFields() {
 
@@ -54,7 +53,7 @@ export default function TaskFields() {
                 <RadioGroup
                     className='radio-button'
                     aria-labelledby="demo-radio-buttons-group-label"
-                    defaultValue="femalenewItems"
+                    defaultValue="newItems"
                     name="radio-buttons-group"
                 >
                     {[...newItems].reverse().map((item, index) => (
@@ -90,7 +89,14 @@ export default function TaskFields() {
                         (<li 
                             key = {index}
                             className='completed_item'
-                            >{item.text}</li>))}
+                            > 
+                                <MdOutlineDelete 
+                                class= "remove_each_item"
+                            
+                                />
+                                {item.text} 
+                            </li>
+                            ))}
             </ul>
         </div>
     </div>

@@ -150,6 +150,22 @@ html {
     margin-bottom: 0;
 }
 
+.remove_each_item {
+    padding-right: 0.7em;
+    margin-bottom:-0.2em;
+    
+}
+
+.remove_each_item:hover {
+    color: blue;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.remove_each_item:active {
+    color: red;
+}
+
 
 li:hover {
     background-color: rgb(214, 214, 250);
