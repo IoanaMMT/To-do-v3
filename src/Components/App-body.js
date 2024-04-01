@@ -34,6 +34,10 @@ export default function TaskFields() {
         }
 };
 
+const handleDelete = (index) => {
+    // completedItems.filter()
+}
+
     const toggleCompletedItems = () => {
         setShowCompletedItems(!showCompletedItems);
     };
@@ -92,6 +96,7 @@ export default function TaskFields() {
                             > 
                                 <MdOutlineDelete 
                                 class= "remove_each_item"
+                                onClick={()=>handleDelete(index)}
                             
                                 />
                                 {item.text} 
