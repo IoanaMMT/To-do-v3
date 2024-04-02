@@ -34,16 +34,17 @@ export default function TaskFields() {
         }
 };
 
-const handleDelete = (index) => {
-    // completedItems.filter()
-}
-
     const toggleCompletedItems = () => {
         setShowCompletedItems(!showCompletedItems);
     };
 
     const removeAll = () => {
         setCompletedItems([]);
+    }
+
+    const handleDelete = (index) => {
+        const deletedItems = completedItems.filter((item, idx) => idx !== index);
+        setCompletedItems(deletedItems);
     }
 
 
@@ -97,7 +98,6 @@ const handleDelete = (index) => {
                                 <MdOutlineDelete 
                                 class= "remove_each_item"
                                 onClick={()=>handleDelete(index)}
-                            
                                 />
                                 {item.text} 
                             </li>
