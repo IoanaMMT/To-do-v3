@@ -96,6 +96,10 @@ html {
     border-radius: 10px;
 }
 
+.new_item:hover {
+    background-color: rgb(214, 214, 250);
+}
+
 .radio-button {
     padding: 5px 16px;
 }
