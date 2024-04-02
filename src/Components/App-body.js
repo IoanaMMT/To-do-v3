@@ -42,8 +42,8 @@ export default function TaskFields() {
         setCompletedItems([]);
     }
 
-    const handleDelete = (index) => {
-        const deletedItems = completedItems.filter((item, idx) => idx !== index);
+    const handleDelete = (item) => {
+        const deletedItems = completedItems.filter((completedItem) => completedItem !== item);
         setCompletedItems(deletedItems);
     }
 
@@ -97,7 +97,7 @@ export default function TaskFields() {
                             > 
                                 <MdOutlineDelete 
                                 class= "remove_each_item"
-                                onClick={()=>handleDelete(index)}
+                                onClick={()=>handleDelete(item)}
                                 />
                                 {item.text} 
                             </li>
