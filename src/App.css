@@ -18,6 +18,11 @@ html {
     justify-content:end;
 }
 
+.drawer-menu-title {
+    background-image: url(C:\Users\Ebay-No-Password\Desktop\Coding\to-do-v3\src\Components\Images\Screenshot2024-04-06120933.png);
+    background-size: cover;
+}
+
 .nav-list {
     list-style: none;
     color: black;

@@ -30,8 +30,10 @@ export default function DenseAppBar() {
               textAlign='center'
               role='presentation'
               >
-                <Typography variant='h6' component='div'>
+                <Typography variant='h6' component='div' className='drawer-menu-title'>
                   Menu
+                </Typography>
+                <Typography variant='p' component='div'>
                   <ul className='drawer-menu-list'>
                     <li><a href="#">Productivity Tips</a></li>
                     <li><a href="#">Inspiring stories</a></li>
