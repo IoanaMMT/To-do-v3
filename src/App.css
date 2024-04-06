@@ -21,6 +21,15 @@ html {
 .drawer-menu-title {
     background-image: url(C:\Users\Ebay-No-Password\Desktop\Coding\to-do-v3\src\Components\Images\Screenshot2024-04-06120933.png);
     background-size: cover;
+    height: 5em;
+}
+
+.drawer-menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
 }
 
 .nav-list {
@@ -32,13 +41,6 @@ html {
 
 }
 
-.drawer-menu-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-}
 
 .drawer-menu-list li {
     margin-top: 1em;
