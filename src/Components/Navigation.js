@@ -33,18 +33,18 @@ export default function DenseAppBar() {
                 <Typography variant='h6' component='div'>
                   Menu
                   <ul className='drawer-menu-list'>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shopping</a></li>
-                    <li><a href="#">Travel List</a></li>
+                    <li><a href="#">Productivity Tips</a></li>
+                    <li><a href="#">Inspiring stories</a></li>
+                    <li><a href="#">Completed list</a></li>
                   </ul>
                 </Typography>
               </Box>
             </Drawer>
             <div className='nav-bar'>
               <ul className='nav-list'>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shopping</a></li>
-                <li><a href="#">Travel List</a></li>
+                <li><a href="#">Completed list</a></li>
+                <li><a href="#">Inspiring stories</a></li>
+                <li><a href="#">Completed list</a></li>
               </ul>
             </div>
         </Toolbar>
