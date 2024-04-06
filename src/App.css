@@ -27,6 +27,11 @@ html {
 
 }
 
+.drawer-menu-list {
+    list-style: none;
+    text-align: center;
+}
+
 .hamburger {
     display: none;
 } 
