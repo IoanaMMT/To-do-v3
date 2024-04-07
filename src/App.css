@@ -37,7 +37,7 @@ html {
     color: black;
     display: flex;
     justify-content:space-between;
-    gap: 2em;
+    gap: 1.5em;
 
 }
 
@@ -196,6 +196,10 @@ li:hover {
 
 li a {
     text-decoration: none;
+}
+
+a {
+    color: black;
 }
 
 .nav-list li:hover {
