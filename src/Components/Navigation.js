@@ -35,8 +35,8 @@ export default function DenseAppBar() {
                 </Typography>
                 <Typography variant='p' component='div'>
                   <ul className='drawer-menu-list'>
-                    <li><a href="#">Productivity Tips</a></li>
-                    <li><a href="#">Inspiring stories</a></li>
+                    <li><a href="https://www.futurelearn.com/info/blog/how-to-be-more-productive">Productivity Tips</a></li>
+                    <li><a href="https://suninme.org/true-story">Inspiring stories</a></li>
                     <li><a href="#">Completed list</a></li>
                   </ul>
                 </Typography>
@@ -44,7 +44,7 @@ export default function DenseAppBar() {
             </Drawer>
             <div className='nav-bar'>
               <ul className='nav-list'>
-                <li><a href="#">Completed list</a></li>
+                <li><a href="#">Productivity Tips</a></li>
                 <li><a href="#">Inspiring stories</a></li>
                 <li><a href="#">Completed list</a></li>
               </ul>
