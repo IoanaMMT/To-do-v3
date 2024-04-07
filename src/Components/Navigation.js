@@ -44,8 +44,8 @@ export default function DenseAppBar() {
             </Drawer>
             <div className='nav-bar'>
               <ul className='nav-list'>
-                <li><a href="#">Productivity Tips</a></li>
-                <li><a href="#">Inspiring stories</a></li>
+                <li><a href="https://www.futurelearn.com/info/blog/how-to-be-more-productive" target="_blank" rel="noopener noreferrer">Productivity Tips</a></li>
+                <li><a href="https://suninme.org/true-story" target="_blank" rel="noopener noreferrer">Inspiring stories</a></li>
                 <li><a href="#">Completed list</a></li>
               </ul>
             </div>
