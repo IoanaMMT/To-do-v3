@@ -79,12 +79,22 @@ html {
 
 .top_row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column ;
+    justify-content:flex-end;
+    position: relative;
+    align-items: end ;
+}
+
+#my_day {
+    margin: 0;
 }
 
 #today_date {
     padding-top: 5px;
+    margin-top: 0;
 }
+
+
 
 .all_lists {
     display: flex;
