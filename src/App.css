@@ -13,10 +13,10 @@ html {
     position: relative;
 }
 
-.menu {
+/* .menu {
     display: flex;
     justify-content:end;
-}
+} */
 
 .drawer-menu-title {
     background-image: url(C:\Users\Ebay-No-Password\Desktop\Coding\to-do-v3\src\Components\Images\Screenshot2024-04-06120933.png);
@@ -46,9 +46,9 @@ html {
     margin-top: 1em;
 }
 
-.hamburger {
+/* .hamburger {
     display: none;
-} 
+}  */
 
 /* if none of the lists are displayed a default image to be displayed */
 .intro {
@@ -223,7 +223,7 @@ a {
 
 @media (min-width: 700px) {
     html{
-        max-width: 700px;
+        max-width: 80%;
         margin: auto;
         padding: 0;
         background-repeat: no-repeat;
@@ -240,9 +240,12 @@ a {
 @media (min-height: 768px) {
     .all_lists{
         max-height: 70vh
-    
     }
-   
+    .intro {
+        min-width: 50%;
+        align-self: center;
+        
+    }
 } 
 
 @media (min-height: 1025px) {
@@ -250,9 +253,11 @@ a {
         max-height: 80vh
     
     }
+
+    
 } 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hamburger {
         display:block;
     }
@@ -260,4 +265,4 @@ a {
     .nav-bar {
         display: none;
     }
-}
+} */
