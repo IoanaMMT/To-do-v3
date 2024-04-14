@@ -25,6 +25,14 @@ export default function DenseAppBar() {
         anchor="left"
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            height: "35%",
+            borderRadius: "10px",
+            transition:
+              "height 0.3s ease-in-out, border-radius 0.3s linear, opacity 0.3s ease-in-out",
+          },
+        }}
       >
         <Box p={2} width="200px" textAlign="center" role="presentation">
           <Typography
