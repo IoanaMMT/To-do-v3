@@ -222,9 +222,9 @@ a {
 .entry_field {
     /* position: absolute;
     bottom: 0; */
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  height: 100px;
+  height: 100px; */
 }
 
 
