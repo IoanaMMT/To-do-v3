@@ -13,11 +13,6 @@ html {
     position: relative;
 }
 
-/* .menu {
-    display: flex;
-    justify-content:end;
-} */
-
 .drawer-menu-title {
     background-image: url(C:\Users\Ebay-No-Password\Desktop\Coding\to-do-v3\src\Components\Images\Screenshot2024-04-06120933.png);
     background-size: cover;
@@ -99,8 +94,6 @@ html {
 .all_lists {
     display: flex;
     flex-direction: column;
-    /* max-height: 400px;
-    min-height: 400px; */
     max-height: 60vh;
     overflow-y: auto;
 }
@@ -164,6 +157,11 @@ html {
     margin-top: 1em;
 }
 
+.completed_button_text {
+    display: flex;
+    gap: 1em;
+}
+
 .remove_button {
     margin-left: 0.5em;
     padding-top: 1em;
@@ -220,11 +218,7 @@ a {
 
 
 .entry_field {
-    /* position: absolute;
-    bottom: 0; */
-  /* position: fixed;
-  bottom: 0;
-  height: 100px; */
+ margin:1em 0;
 }
 
 
@@ -256,6 +250,7 @@ a {
         align-self: center;
         
     }
+
 } 
 
 @media (min-height: 1025px) {
@@ -266,13 +261,3 @@ a {
 
     
 } 
-
-/* @media (max-width: 768px) {
-    .hamburger {
-        display:block;
-    }
-
-    .nav-bar {
-        display: none;
-    }
-} */
