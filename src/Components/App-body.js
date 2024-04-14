@@ -11,6 +11,8 @@ import { alpha } from "@mui/material/styles";
 import Stack from "@mui/material/Stack";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { MdOutlineDelete } from "react-icons/md";
+import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 
 export default function TaskFields() {
   const [newItems, setNewItems] = useState([]);
@@ -117,7 +119,18 @@ export default function TaskFields() {
                     size="medium"
                     onClick={toggleCompletedItems}
                   >
-                    {showCompletedItems ? "Completed V" : "Completed >"}
+                    <div className="completed_button_text">
+                      <div>
+                        {showCompletedItems ? "Completed" : "Completed"}
+                      </div>
+                      <div>
+                        {showCompletedItems ? (
+                          <FaChevronUp />
+                        ) : (
+                          <FaChevronDown />
+                        )}
+                      </div>
+                    </div>
                   </Button>
                 </div>
               </Box>
