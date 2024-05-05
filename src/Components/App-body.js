@@ -52,34 +52,6 @@ export default function TaskFields() {
 
   return (
     <>
-      <div className="entry_field">
-        <Box
-          component="form"
-          sx={{
-            "& > :not(style)": { m: 1, width: "25ch" },
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <TextField
-            sx={{
-              backgroundColor: (theme) =>
-                alpha(theme.palette.common.white, 0.7),
-            }}
-            id="outlined-basic"
-            label="+ Add Task"
-            variant="outlined"
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && e.target.value.trim() !== "") {
-                e.preventDefault();
-                addItem(e.target.value);
-                e.target.value = "";
-              }
-            }}
-          />
-        </Box>
-      </div>
-
       {newItems.length || completedItems.length ? (
         <div className="all_lists">
           {/* **********  Incompleted List  *********** */}
@@ -185,6 +157,34 @@ export default function TaskFields() {
       )}
 
       {/* *******  Entry Field  ********* */}
+
+      <div className="entry_field">
+        <Box
+          component="form"
+          sx={{
+            "& > :not(style)": { m: 1, width: "25ch" },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <TextField
+            sx={{
+              backgroundColor: (theme) =>
+                alpha(theme.palette.common.white, 0.7),
+            }}
+            id="outlined-basic"
+            label="+ Add Task"
+            variant="outlined"
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && e.target.value.trim() !== "") {
+                e.preventDefault();
+                addItem(e.target.value);
+                e.target.value = "";
+              }
+            }}
+          />
+        </Box>
+      </div>
     </>
   );
 }
