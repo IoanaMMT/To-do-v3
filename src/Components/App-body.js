@@ -173,7 +173,8 @@ export default function TaskFields() {
                 alpha(theme.palette.common.white, 0.7),
             }}
             id="outlined-basic"
-            label="+ Add Task"
+            // label="+ Add Task"
+            placeholder="+ Add Task"
             variant="outlined"
             onKeyDown={(e) => {
               if (e.key === "Enter" && e.target.value.trim() !== "") {

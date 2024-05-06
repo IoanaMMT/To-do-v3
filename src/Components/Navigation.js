@@ -70,26 +70,5 @@ export default function DenseAppBar() {
         </Box>
       </Drawer>
     </>
-
-    // ****** Appbar - removed as it did not fit the design ***********
-
-    // <Box sx={{ flexGrow: 1 }} >
-    //   <AppBar position="static" sx={{ bgcolor: 'rgb(252, 240, 225)' }} >
-    //     <Toolbar variant="dense" className='menu'>
-
-    //         <div className='nav-bar'>
-    //           <ul className='nav-list'>
-    //             <li><a href="https://www.futurelearn.com/info/blog/how-to-be-more-productive" target="_blank" rel="noopener noreferrer">Productivity Tips</a></li>
-    //             <li><a href="https://suninme.org/true-story" target="_blank" rel="noopener noreferrer">Inspiring stories</a></li>
-    //             <li><a href="#">Completed list</a></li>
-    //           </ul>
-    //         </div>
-    //     </Toolbar>
-    //     <Typography variant="h6" color="inherit" component="div">
-    //         {/* add text later on if needed */}
-    //       </Typography>
-    //   </AppBar>
-
-    // </Box>
   );
 }
