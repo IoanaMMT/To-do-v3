@@ -1,12 +1,4 @@
 
-
-/* html {
-    height: 100%;
-    background-image: url(C:\Users\Ebay-No-Password\Desktop\Coding\to-do-v3\src\Components\Images\Screenshot20240317113846.png);
-    background-size: cover;
-    background-position: center;
-} */
-
 html, body {
     height: 100%;
     margin: 0;
@@ -24,7 +16,7 @@ html, body {
 }
 
 .drawer-menu-title {
-    background-image: url(C:\Users\Ebay-No-Password\Desktop\Coding\to-do-v3\src\Components\Images\Screenshot2024-04-06120933.png);
+    background-image: url('./Components/Images/sunrise.png');
     background-size: cover;
     height: 5em;
 }
@@ -57,7 +49,7 @@ html, body {
 
 /* if none of the lists are displayed a default image to be displayed */
 .intro {
-    background-image: url(C:/Users/Ebay-No-Password/Desktop/Coding/to-do-v3/src/Components/Images/wiseInTheDark.png);
+    background-image: url('./Components/Images/wiseInTheDark.png');
     background-size: cover;
     background-color:rgb(118, 119, 121) ;
     opacity: 0.6;

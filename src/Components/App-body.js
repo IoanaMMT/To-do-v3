@@ -13,7 +13,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { MdOutlineDelete } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
-import screenshotImage from "./Images/bluesky.png";
+import screenshotImage from "./Images/wiseInTheDark.png";
 
 export default function TaskFields() {
   const [newItems, setNewItems] = useState([]);
